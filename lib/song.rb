@@ -2,7 +2,7 @@ require "pry"
 
 class Song
 
-  attr_accessor:artist_name, :name
+  attr_accessor :artist_name, :name
 
   @@all = []
 
@@ -63,7 +63,9 @@ class Song
       i = words.split(" - ")
       name = i[1]
       artist_name = i[0]
-
+      song = Song.new
+      song.name = name
+      song.artist_name = artist_name
     #binding.pry
     end
   end
