@@ -61,7 +61,7 @@ class Song
       i = words.split(" - ")
       name = i[1]
       artist_name = i[0]
-    binding.pry
+    #binding.pry
     end
   end
 end
