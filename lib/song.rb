@@ -59,6 +59,8 @@ class Song
     title = filename.split(".")
     title.collect do |words|
       i = words.split(" - ")
+      name = i[1]
+      artist_name = i[0]
     binding.pry
     end
   end
