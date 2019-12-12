@@ -58,7 +58,7 @@ class Song
   def self.new_from_filename(filename)
     title = filename.split(".")
     title.collect do |words|
-words
+        words.split(" - ")
     binding.pry
     end
   end
