@@ -64,8 +64,7 @@ class Song
       song = self.new
       song.name = i[1]
       song.artist_name = i[0]
-      
-      @@all << song
+      song
     #binding.pry
     end
   end
