@@ -61,14 +61,12 @@ class Song
     title = filename.split(".")
     title.collect do |words|
       i = words.split(" - ")
-      name = i[1]
-      artist_name = i[0]
       song = self.new
-      song.name = name
-      song.artist_name = artist_name
+      song.name = i[1]
+      song.artist_name = i[0]
+      
       @@all << song
     #binding.pry
     end
-    @@all
   end
 end
