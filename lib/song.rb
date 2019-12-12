@@ -62,7 +62,7 @@ class Song
       song = self.new
       song.name = title[1].split(".")[0]
       song.artist_name = title[0]
-      binding.pry
+      #binding.pry
       song
   end
 end
