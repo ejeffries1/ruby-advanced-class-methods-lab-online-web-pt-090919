@@ -58,11 +58,10 @@ class Song
   end
 
   def self.new_from_filename(filename)
-    title = filename.split(".")
-    title.collect do |words|
-      i = words.split(" - ")
+    title = filename.split(" - ")
+
       song = self.new
-      song.name = i[1]
+      song.name = ti.split(".")i[1]
       song.artist_name = i[0]
       song
     #binding.pry
