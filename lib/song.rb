@@ -56,16 +56,6 @@ class Song
   end
 
   def self.new_from_filename(filename)
-    i = filename.split(" . ")
-    i.collect do |arr|
-      data = arr.split(" - ")
-      name = data[1]
-      artist_name = data[0]
-
-      song = Song.new
-      song.name = name
-      song.artist_name = artist_name
-      song
-    end
+    
   end
 end
