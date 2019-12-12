@@ -63,7 +63,7 @@ class Song
       i = words.split(" - ")
       name = i[1]
       artist_name = i[0]
-      song = Song.new
+      song = self.new
       song.name = name
       song.artist_name = artist_name
       song
